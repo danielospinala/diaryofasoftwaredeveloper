@@ -1,0 +1,8 @@
+.container{
+    position: fixed;
+    top: 0;
+    background-color: rgb(31 41 55);
+    color: rgb(229 231 235);
+    padding: 20px;
+    width: 90vw;
+}
