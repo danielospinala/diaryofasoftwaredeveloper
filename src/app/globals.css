@@ -24,7 +24,7 @@ a {
     text-decoration: none;
 }
 .container{
- 
+    
     min-height: 100vh;
     background-color: var(--bg);
     color: var(--textColor);
@@ -36,12 +36,12 @@ a {
     max-width: 1536px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 30px;
+    padding-right: 10px;
 
 }
 
-@media screen and (max-width: 1536px) {
+/* @media screen and (max-width: 1536px) {
     .wrapper {
       max-width: 1366px;
     }
@@ -54,4 +54,4 @@ a {
          padding-left: 10px;
          padding-right: 10px;
      }
- }
+ } */

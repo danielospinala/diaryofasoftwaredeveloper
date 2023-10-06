@@ -2,6 +2,7 @@ import './globals.css'
 import Footer from '@/components/footer/Footer'
 import NavBar from '@/components/navBar/NavBar'
 import { Inter } from 'next/font/google'
+import {ThemeProvider} from '@/ThemeContext/ThemeContext'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -14,11 +15,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className }>
+        <ThemeProvider>
         <div className='container'>
           <div className='wrapper'>
+
             <NavBar />
+            <div className='flex justify-center '>
+
             {children}
+            </div>
 
             {/* <Footer /> */}
 
@@ -28,7 +34,7 @@ export default function RootLayout({ children }) {
 
 
         </div>
-
+        </ThemeProvider>
       </body>
     </html>
   )
